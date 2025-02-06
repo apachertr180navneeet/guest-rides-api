@@ -7,12 +7,12 @@ import { GuestRidesService } from './guest-rides.service';
 export class GuestRidesController {
   constructor(private readonly guestRidesService: GuestRidesService) {}
 
-  @Get('auth')
-  @ApiOperation({ summary: 'Get OAuth Authorization URL' })
-  @ApiResponse({ status: 200, description: 'Returns the Uber OAuth URL' })
-  getAuthUrl() {
-    return { url: this.guestRidesService.getAuthUrl() };
-  }
+//   @Get('auth')
+//   @ApiOperation({ summary: 'Get OAuth Authorization URL' })
+//   @ApiResponse({ status: 200, description: 'Returns the Uber OAuth URL' })
+//   getAuthUrl() {
+//     return { url: this.guestRidesService.getAuthUrl() };
+//   }
 
   @Post('oauth')
   @ApiOperation({ summary: 'Get OAuth Authorization URL' })
