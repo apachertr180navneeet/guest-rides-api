@@ -17,10 +17,10 @@ export class GuestRidesService {
   constructor(private readonly httpService: HttpService) {}
 
   // Generate the authorization URL for OAuth
-  getAuthUrl() {
-    //console.log("Generating authorization URL" + this.baseUrl);
-    return `${this.baseUrl}/oauth/v2/authorize?client_id=${this.clientId}&response_type=code&redirect_uri=${this.redirectUri}&scope=rides.request`;
-  }
+//   getAuthUrl() {
+//     //console.log("Generating authorization URL" + this.baseUrl);
+//     return `${this.baseUrl}/oauth/v2/authorize?client_id=${this.clientId}&response_type=code&redirect_uri=${this.redirectUri}&scope=rides.request`;
+//   }
 
   async getAccessTokenUsingClientCredentials() {
     try {
